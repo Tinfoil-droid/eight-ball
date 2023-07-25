@@ -19,13 +19,11 @@ let answers = [
     'Does a one legged duck swim in a circle?'
 ]
 
-const imgButton = document.querySelectorAll('img');
+const imgButton = document.getElementById('magicEightBall');
 const circleButton = document.getElementById('circle');
 
-imgButton.forEach((Image) => {
-    Image.addEventListener('click', () => {
-        displayAnswer();
-    });
+imgButton.addEventListener('click', () => {
+    displayAnswer();
 });
 
 circleButton.addEventListener('click', () => {
