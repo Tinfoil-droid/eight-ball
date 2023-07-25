@@ -8,7 +8,7 @@ let answers = [
     'It is certain.',
     'Ask me later.',
     'Chances seem good.',
-    'I don\'t know, I\'m just a stupid piece of plastic.',
+    'I don\'t know, I\'m just a stupid piece of code.',
     'Ask again later.',
     'Signs point to yes.',
     'No.',
@@ -18,6 +18,19 @@ let answers = [
     'Is the Pope Catholic?',
     'Does a one legged duck swim in a circle?'
 ]
+
+const imgButton = document.querySelectorAll('img');
+const circleButton = document.getElementById('circle');
+
+imgButton.forEach((Image) => {
+    Image.addEventListener('click', () => {
+        displayAnswer();
+    });
+});
+
+circleButton.addEventListener('click', () => {
+    displayAnswer();
+});
 
 let displayAnswer = function()
 {

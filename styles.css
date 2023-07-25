@@ -7,7 +7,12 @@ main {
     margin: auto;
 }
 
-h3, h5, #answerButton, #magicEightBall {
+.click {
+    text-align: center;
+    font-weight: bold;
+}
+
+h3, h5, #magicEightBall {
     text-align: center;
     color: khaki;
     margin: 5px;
